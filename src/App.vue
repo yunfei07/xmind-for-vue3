@@ -3,28 +3,20 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
+  <div class="grid grid-cols-10 gap-2">
+  <div class="bg-sky-50 aspect-square"></div>
+  <div class="bg-sky-100 aspect-square"></div>
+  <div class="bg-sky-200 aspect-square"></div>
+  <div class="bg-sky-300 aspect-square"></div>
+  <div class="bg-sky-400 aspect-square"></div>
+  <div class="bg-sky-500 aspect-square"></div>
+  <div class="bg-sky-600 aspect-square"></div>
+  <div class="bg-sky-700 aspect-square"></div>
+  <div class="bg-sky-800 aspect-square"></div>
+  <div class="bg-sky-900 aspect-square"></div>
+</div>
   <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
 </style>
