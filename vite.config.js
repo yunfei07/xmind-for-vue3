@@ -6,9 +6,9 @@ import dts from "vite-plugin-dts";
 export default defineConfig({
   build: {
     lib: {
-      entry: "src/index.js",
-      name: "MyComponent",
-      fileName: (format) => `my-component.${format}.js`,
+      entry: "src/main.js",
+      name: "XMindForVue3",
+      fileName: (format) => `xmind-for-vue3.${format}.js`,
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
@@ -21,5 +21,5 @@ export default defineConfig({
       },
     },
   },
-  plugins: [vue()],
+  plugins: [vue(), dts()],
 });
